@@ -28,7 +28,7 @@ type Link struct {
 	Description  string        `json:"description"`
 	Tags         []string      `json:"tags"`
 	Unlisted     *int          `json:"unlisted"`
-	VariableLink *int          `json:"variable_link`
+	VariableLink *int          `json:"variable_link"`
 	Pinned       *int          `json:"pinned"`
 	RedirectHits *RedirectHits `json:"redirect_hits"`
 }
