@@ -1,7 +1,5 @@
+name: Test
 on: [push, pull_request]
-name: tests
-env:
-  GO111MODULE: on
 
 jobs:
   test:
@@ -28,3 +26,7 @@ jobs:
         run: go vet ./...
       - name: Run go test
         run: go test -v -race -coverprofile coverage.txt -covermode atomic ./...
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v1
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
