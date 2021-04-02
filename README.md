@@ -1,4 +1,4 @@
-# Miro API in Go
+# Golinks SDK for Go
 
 ![tests](https://github.com/kekelinks/go-golinks/workflows/tests/badge.svg)
 [![codecov](https://codecov.io/gh/kekelinks/go-golinks/branch/master/graph/badge.svg)](https://codecov.io/gh/kekelinks/go-golinks)
